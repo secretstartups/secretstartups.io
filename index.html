@@ -22,83 +22,144 @@
 
     <header class="site-header">
         <nav class="nav">
-            <a class="brand" href="index.html">SecretStartups</a>
+            <a class="brand" href="index.html"><span class="brand-mark"></span>SecretStartups</a>
             <div class="nav-links">
                 <a href="index.html#portfolio">Portfolio</a>
                 <a href="partnerships.html">Partnerships</a>
                 <a href="investors.html">Investor Relations</a>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="nav-cta">Contact</a>
             </div>
         </nav>
     </header>
 
     <div class="hero">
-        <div class="hero-content">
-            <h1>SecretStartups</h1>
-            <p>We build a portfolio of startups, in stealth and in the open, sharing the tools and discipline that make each one possible.</p>
-            <a href="contact.html" class="cta">Get in Touch</a>
+        <div class="wrap hero-content">
+            <div class="eyebrow">Venture Builder</div>
+            <h1>We build the tools, then we build the startups.</h1>
+            <p>SecretStartups launches and operates a portfolio of companies - starting with the platform every one of them needs to ship software.</p>
+            <div class="cta-row">
+                <a href="index.html#portfolio" class="btn btn-primary">Explore the Portfolio</a>
+                <a href="contact.html" class="btn btn-ghost">Get in Touch</a>
+            </div>
         </div>
     </div>
 
-    <main>
-        <section id="portfolio" class="portfolio">
-            <div class="section-inner">
-                <h2>Our Portfolio</h2>
-                <p class="section-intro">
-                    SecretStartups is a venture builder - we launch and operate a portfolio of startups rather than
-                    just one. The first thing we built wasn't a product for customers; it was the toolset we'd need
-                    to build every product after it.
-                </p>
-
-                <div class="portfolio-grid">
-                    <article class="portfolio-card portfolio-card--featured">
-                        <div class="portfolio-card-tag">Company&nbsp;01</div>
-                        <h3><a href="https://workshop.secretstartups.io" target="_blank" rel="noopener">WorkShop</a></h3>
-                        <p class="portfolio-card-sub">AI Platform Engineering</p>
-                        <p>
-                            WorkShop is an AI platform engineering tool. It gives early-stage founders the speed of
-                            "describe it, build it" tools like Lovable, backed by enterprise-grade guardrails, audit
-                            trails, an AI-powered IDE, and clear visibility into usage.
-                        </p>
-                        <p>
-                            It handles the full software lifecycle - CI/CD, security, cost and operations automation,
-                            and even fixing known vulnerabilities - so founders spend less time managing
-                            infrastructure and more time building.
-                        </p>
-                        <p>
-                            It's also built for freedom of choice: start with any cloud, language, or AI model, then
-                            switch between them later without losing control of your data or your code.
-                        </p>
-                        <p>
-                            We built WorkShop first because every company we launch needs to ship software. Instead
-                            of stitching together GitHub, Jenkins, ArgoCD, Kubernetes, and a dozen other tools,
-                            WorkShop gives our founders one capable platform to build on - and it's the foundation
-                            every future SecretStartups company will run on.
-                        </p>
-                        <a class="portfolio-link" href="https://workshop.secretstartups.io" target="_blank" rel="noopener">Visit WorkShop.SecretStartups.io &rarr;</a>
-                    </article>
-
-                    <article class="portfolio-card portfolio-card--placeholder">
-                        <div class="portfolio-card-tag">Company&nbsp;02</div>
-                        <h3>In the Works</h3>
-                        <p class="portfolio-card-sub">Coming soon</p>
-                        <p>
-                            WorkShop is just the beginning. More portfolio companies are being built on top of it -
-                            details to follow.
-                        </p>
-                    </article>
+    <section class="approach">
+        <div class="wrap section">
+            <div class="eyebrow">How We Operate</div>
+            <div class="approach-grid">
+                <div class="approach-item">
+                    <span class="approach-index">01</span>
+                    <h3>Tools first</h3>
+                    <p>Before we start a company, we make sure it can actually ship. WorkShop came before any product it builds.</p>
                 </div>
+                <div class="approach-item">
+                    <span class="approach-index">02</span>
+                    <h3>Hands-on, not hands-off</h3>
+                    <p>We build and operate alongside founders inside the portfolio, rather than stepping back after the first check.</p>
+                </div>
+                <div class="approach-item">
+                    <span class="approach-index">03</span>
+                    <h3>One platform, compounding</h3>
+                    <p>Every portfolio company runs on the same foundation, so what one team learns benefits the next.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="portfolio" class="section wrap">
+            <div class="eyebrow">Portfolio</div>
+            <h2>What we've built so far</h2>
+            <p class="section-intro">
+                SecretStartups is a venture builder - we launch and operate a portfolio of startups rather than
+                just one. The first thing we built wasn't a product for customers; it was the toolset we'd need
+                to build every product after it.
+            </p>
+
+            <div class="portfolio-grid">
+                <article class="portfolio-card portfolio-card--featured">
+                    <div class="portfolio-card-head">
+                        <img class="portfolio-logo" src="workshop-logo.svg" alt="WorkShop logo">
+                        <div>
+                            <div class="portfolio-card-tag">Company&nbsp;01</div>
+                            <h3><a href="https://workshop.secretstartups.io" target="_blank" rel="noopener">WorkShop</a></h3>
+                            <p class="portfolio-card-sub">AI Platform Engineering</p>
+                        </div>
+                    </div>
+                    <p>
+                        WorkShop is an AI platform engineering tool. It gives early-stage founders the speed of
+                        "describe it, build it" tools like Lovable, backed by enterprise-grade guardrails, audit
+                        trails, an AI-powered IDE, and clear visibility into usage.
+                    </p>
+                    <details class="portfolio-details">
+                        <summary>Read more about WorkShop</summary>
+                        <div class="portfolio-details-body">
+                            <p>
+                                It handles the full software lifecycle - CI/CD, security, cost and operations
+                                automation, and even fixing known vulnerabilities - so founders spend less time
+                                managing infrastructure and more time building.
+                            </p>
+                            <p>
+                                It's also built for freedom of choice: start with any cloud, language, or AI
+                                model, then switch between them later without losing control of your data or
+                                your code.
+                            </p>
+                            <p>
+                                We built WorkShop first because every company we launch needs to ship software.
+                                Instead of stitching together GitHub, Jenkins, ArgoCD, Kubernetes, and a dozen
+                                other tools, WorkShop gives our founders one capable platform to build on - and
+                                it's the foundation every future SecretStartups company will run on.
+                            </p>
+                        </div>
+                    </details>
+                    <div class="portfolio-card-footer">
+                        <a class="portfolio-link" href="https://workshop.secretstartups.io" target="_blank" rel="noopener">Visit WorkShop.SecretStartups.io &rarr;</a>
+                        <span class="status-pill status-pill--live">Live</span>
+                    </div>
+                </article>
+
+                <article class="portfolio-card portfolio-card--placeholder">
+                    <div class="portfolio-card-head">
+                        <div>
+                            <div class="portfolio-card-tag">Company&nbsp;02</div>
+                            <h3>In the Works</h3>
+                            <p class="portfolio-card-sub">Coming soon</p>
+                        </div>
+                    </div>
+                    <p>
+                        WorkShop is just the beginning. More portfolio companies are being built on top of it -
+                        details to follow.
+                    </p>
+                    <div class="portfolio-card-footer">
+                        <span></span>
+                        <span class="status-pill status-pill--soon">Coming Soon</span>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="footer-links">
-            <a href="partnerships.html">Partnerships</a>
-            <a href="investors.html">Investor Relations</a>
-            <a href="contact.html">Contact</a>
+        <div class="wrap footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="index.html"><span class="brand-mark"></span>SecretStartups</a>
+                <p>A venture builder launching and operating a portfolio of startups, starting with the tools they all run on.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="partnerships.html">Partnerships</a>
+                <a href="investors.html">Investor Relations</a>
+            </div>
         </div>
-        <p>&copy; 2026 SecretStartups. All rights reserved.</p>
+        <div class="wrap footer-bottom">
+            &copy; 2026 SecretStartups. All rights reserved.
+        </div>
     </footer>
 
 </body>
