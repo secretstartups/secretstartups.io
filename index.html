@@ -14,88 +14,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="SecretStartups - Discover Hidden Innovation">
+    <meta name="description" content="SecretStartups builds a portfolio of startups, starting with WorkShop - an AI platform engineering toolset for founders.">
     <title>SecretStartups</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body, html {
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #000;
-            color: white;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 100vh;
-            background-image: url('ss-africa-1m.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .content {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 30px;
-            border-radius: 10px;
-        }
-
-        h1 {
-            font-size: 4rem;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-
-        .cta {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #ff3c00;
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta:hover {
-            background-color: #ff5e26;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 20px;
-            width: 100%;
-            text-align: center;
-            color: rgba(255, 255, 255, 0.5);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="container">
-        <div class="content">
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="index.html">SecretStartups</a>
+            <div class="nav-links">
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="partnerships.html">Partnerships</a>
+                <a href="investors.html">Investor Relations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
             <h1>SecretStartups</h1>
-            <p>Discover and explore innovative startups, shaping the future in stealth mode.</p>
-            <a href="mailto: hello@secretstartups.org" class="cta">Join the Journey</a>
+            <p>We build a portfolio of startups, in stealth and in the open, sharing the tools and discipline that make each one possible.</p>
+            <a href="contact.html" class="cta">Get in Touch</a>
         </div>
     </div>
 
-    <footer>
-        &copy; 2024 SecretStartups. All rights reserved.
+    <main>
+        <section id="portfolio" class="portfolio">
+            <div class="section-inner">
+                <h2>Our Portfolio</h2>
+                <p class="section-intro">
+                    SecretStartups is a venture builder - we launch and operate a portfolio of startups rather than
+                    just one. The first thing we built wasn't a product for customers; it was the toolset we'd need
+                    to build every product after it.
+                </p>
+
+                <div class="portfolio-grid">
+                    <article class="portfolio-card portfolio-card--featured">
+                        <div class="portfolio-card-tag">Company&nbsp;01</div>
+                        <h3><a href="https://workshop.secretstartups.io" target="_blank" rel="noopener">WorkShop</a></h3>
+                        <p class="portfolio-card-sub">AI Platform Engineering</p>
+                        <p>
+                            WorkShop is an AI platform engineering tool. It gives early-stage founders the speed of
+                            "describe it, build it" tools like Lovable, backed by enterprise-grade guardrails, audit
+                            trails, an AI-powered IDE, and clear visibility into usage.
+                        </p>
+                        <p>
+                            It handles the full software lifecycle - CI/CD, security, cost and operations automation,
+                            and even fixing known vulnerabilities - so founders spend less time managing
+                            infrastructure and more time building.
+                        </p>
+                        <p>
+                            It's also built for freedom of choice: start with any cloud, language, or AI model, then
+                            switch between them later without losing control of your data or your code.
+                        </p>
+                        <p>
+                            We built WorkShop first because every company we launch needs to ship software. Instead
+                            of stitching together GitHub, Jenkins, ArgoCD, Kubernetes, and a dozen other tools,
+                            WorkShop gives our founders one capable platform to build on - and it's the foundation
+                            every future SecretStartups company will run on.
+                        </p>
+                        <a class="portfolio-link" href="https://workshop.secretstartups.io" target="_blank" rel="noopener">Visit WorkShop.SecretStartups.io &rarr;</a>
+                    </article>
+
+                    <article class="portfolio-card portfolio-card--placeholder">
+                        <div class="portfolio-card-tag">Company&nbsp;02</div>
+                        <h3>In the Works</h3>
+                        <p class="portfolio-card-sub">Coming soon</p>
+                        <p>
+                            WorkShop is just the beginning. More portfolio companies are being built on top of it -
+                            details to follow.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="partnerships.html">Partnerships</a>
+            <a href="investors.html">Investor Relations</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p>&copy; 2026 SecretStartups. All rights reserved.</p>
     </footer>
 
 </body>
